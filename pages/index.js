@@ -34,7 +34,7 @@ export default function Home({ allPostsData }) {
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
               <Link href={`/posts/${id}`} legacyBehavior={false}>{title}</Link>
-              <br/>
+              <br />
               <small className={utilStyles.lightText}>
                 <Date dateString={date} />
               </small>
