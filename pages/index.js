@@ -14,12 +14,6 @@ export async function getStaticProps() {
   };
 }
 
-// export default function Home({foo}) {
-//   return (
-//     <h1>{foo}</h1>
-//   )
-// }
-
 export default function Home({ allPostsData }) {
   return (
     <Layout home>
@@ -39,9 +33,7 @@ export default function Home({ allPostsData }) {
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>
-                <a>{title}</a>
-              </Link>
+              <Link href={`/posts/${id}`} legacyBehavior={false}>{title}</Link>
               <br />
               <small className={utilStyles.lightText}>
                 <Date dateString={date} />
