@@ -4,8 +4,10 @@ import Date from '../components/date';
 import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
+import { compressSync } from 'snappy';
 
 export async function getStaticProps() {
+  let temp = compressSync('Hi Mom!');
   const allPostsData = getSortedPostsData();
   return {
     props: {
