@@ -24,10 +24,7 @@
   color: var(--text);
 }
 .active {
-  color: red;
-}
-.none {
-  color: blue;
+  color: var(--text);
 }
 
 .bar {

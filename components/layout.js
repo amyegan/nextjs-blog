@@ -1,9 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "./layout.module.css";
-import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
-import { useRouter } from "next/router";
+import { NavLink } from "./navLink";
 
 const name = "Amy";
 export const siteTitle = "Next.js Sample Website";
@@ -27,60 +26,27 @@ export default function Layout({ children, home }) {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <header className={styles.header}>
-        {home ? (
-          <>
-            <a href="/" className={styles.siteName}>
-              Site Name
-            </a>
-            <nav className={styles.bar}>
-              <ul>
-                <li>
-                  <Link href="/">
-                    <a>About</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/">
-                    <a>Blog</a>
-                  </Link>
-                </li>
-              </ul>
-            </nav>
-          </>
-        ) : (
-          <>
-            <a href="/" className={styles.siteName}>
-              Site Name
-            </a>
-            <nav className={styles.bar}>
-              <ul>
-                <li>
-                  <Link href="/">
-                    <a>Home</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/">
-                    <a>About</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/">
-                    <a>Blog</a>
-                  </Link>
-                </li>
-              </ul>
-            </nav>
-          </>
-        )}
+        <a href="/" className={styles.siteName}>
+          Site Name
+        </a>
+        <nav className={styles.bar}>
+          <ul>
+            <li>
+              <NavLink href="/" exact>
+                Home
+              </NavLink>
+            </li>
+            <li>
+              <NavLink href="/blog">Blog</NavLink>
+            </li>
+          </ul>
+        </nav>
       </header>
 
       <main className={styles.main}>{children}</main>
       {!home && (
         <div className={styles.backToHome}>
-          <Link href="/">
-            <a>← Back to home</a>
-          </Link>
+          <Link href="/">← Back to home</Link>
         </div>
       )}
     </>
