@@ -25,7 +25,10 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <header className={styles.header}>
+      <header
+        className={styles.header}
+        style={home && { position: "absolute" }}
+      >
         <Link href="/" className={styles.siteName}>
           Site Name
         </Link>
@@ -43,14 +46,16 @@ export default function Layout({ children, home }) {
         </nav>
       </header>
 
-      <main className={styles.main}>
-        {children}
-        {!home && (
+      {home ? (
+        <main className={styles.home}>{children}</main>
+      ) : (
+        <main className={styles.main}>
+          {children}
           <div className={styles.backToHome}>
             <Link href="/blog">← Back to blog list</Link>
           </div>
-        )}
-      </main>
+        </main>
+      )}
 
       <footer className={styles.footer}>
         <div className={styles.footerContainer}>

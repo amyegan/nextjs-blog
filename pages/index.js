@@ -20,15 +20,31 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.headingMd}>
-        <p>Hi! This is my sample site</p>
-        <p>
-          (This is a sample website - you’ll be building a site like this on{" "}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
+      <section className={utilStyles.heroSection}>
+        <p style={{ margin: "0", padding: "0" }}>
+          Hi! I'm Amy <br />
+          <span style={{ color: "var(--gray-light)", fontWeight: "200" }}>
+            and I use the internet to solve problems.
+          </span>
         </p>
       </section>
 
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+      <section
+        className={`${utilStyles.headingMd} ${utilStyles.padding1px} ${utilStyles.homeSection}`}
+      >
+        <p style={{ margin: "0", padding: "0" }}>
+          I build projects with code and (try to) answer people's dev questions.
+          I occasionally write about it here. You can also find me in{" "}
+          <Link href="https://github.com/vercel/community/discussions">
+            Vercel Community Discussions
+          </Link>{" "}
+          on GitHub.
+        </p>
+      </section>
+
+      <section
+        className={`${utilStyles.headingMd} ${utilStyles.padding1px} ${utilStyles.homeSection}`}
+      >
         <h2 className={utilStyles.headingLg}>Blog</h2>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (

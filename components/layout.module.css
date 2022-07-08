@@ -12,6 +12,11 @@
   flex: 1 0 auto;
 }
 
+.home {
+  margin: 0 auto;
+  flex: 1 0 auto;
+}
+
 .footer {
   width: 100%;
   padding: 0.8em 3em;
@@ -54,6 +59,7 @@
   padding: 0 3em;
   border-bottom: 1px solid var(--gray-med);
   flex-shrink: 0;
+  background-color: var(--background);
 }
   .header a {
     text-decoration: none;
