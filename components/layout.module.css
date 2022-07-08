@@ -13,39 +13,39 @@
 }
 
 .home {
-  margin: 0 auto;
+  margin: 0;
   flex: 1 0 auto;
 }
 
 .footer {
   width: 100%;
-  padding: 0.8em 3em;
+  padding: 1em 3em;
   border-top: 1px solid var(--gray-med);
   flex-shrink: 0;
 }
-  .footerContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 36rem;
-    max-width: 60ch;
-    margin: 0 auto;
-  }
-  .footer a {
-    padding: 0 1em;
-    display: flex;
-  }
-  .footer a:hover {
-    color: var(--text);
-    text-decoration: none;
-  }
-  .feather {
-    stroke: var(--green);
-    margin-right: 0.5em;
-  }
-  a:hover .feather {
-    stroke: var(--text);
-  }
+.footerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 36rem;
+  max-width: 60ch;
+  margin: 0 auto;
+}
+.footer a {
+  padding: 0 1em;
+  display: flex;
+}
+.footer a:hover {
+  color: var(--text);
+  text-decoration: none;
+}
+.feather {
+  stroke: var(--green);
+  margin-right: 0.5em;
+}
+a:hover .feather {
+  stroke: var(--text);
+}
 
 .backToHome {
   margin: 3rem 0 0;
@@ -60,37 +60,38 @@
   border-bottom: 1px solid var(--gray-med);
   flex-shrink: 0;
   background-color: var(--background);
+  z-index: 1;
 }
-  .header a {
-    text-decoration: none;
-  }
-  .header a:hover {
-    text-decoration: none;
-    color: var(--text);
-  }
-  .active {
-    color: var(--text);
-  }
+.header a {
+  text-decoration: none;
+}
+.header a:hover {
+  text-decoration: none;
+  color: var(--text);
+}
+.active {
+  color: var(--text);
+}
 
-  .bar {
-    display: block;
-    margin-left: auto;
-    flex-grow: 1;
-    margin: 1em 0;
-  }
-  .bar ul {
-    display: flex;
-    align-items: center;
-    box-sizing: border-box;
-    justify-content: flex-end;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  .bar li {
-    margin: 0 10px;
-  }
-  .siteName {
-    display: inline-block;
-    margin: 0;
-  }
+.bar {
+  display: block;
+  margin-left: auto;
+  flex-grow: 1;
+  margin: 1em 0;
+}
+.bar ul {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.bar li {
+  margin: 0 10px;
+}
+.siteName {
+  display: inline-block;
+  margin: 0;
+}

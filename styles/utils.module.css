@@ -55,11 +55,23 @@
   padding: 6em 3em 3em;
   height: 100vh;
   font-size: 3em;
+  position: sticky;
+  top: 0;
+  background-color: var(--background);
+  background: radial-gradient(var(--gray-dark), var(--background) 75%);
 }
 
 .homeSection {
-  max-width: 36rem;
+  background-color: var(--background);
+  border-top: 1px solid var(--gray-med);
+  padding: 4em 3em 6em;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 6em);
+}
+
+.column {
+  max-width: 36px;
   max-width: 60ch;
-  padding: 0 1rem;
-  margin: 3rem auto;
 }

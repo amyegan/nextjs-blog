@@ -32,33 +32,32 @@ export default function Home({ allPostsData }) {
       <section
         className={`${utilStyles.headingMd} ${utilStyles.padding1px} ${utilStyles.homeSection}`}
       >
-        <p style={{ margin: "0", padding: "0" }}>
+        <p className={utilStyles.column} style={{ margin: "0 0 3em" }}>
           I build projects with code and (try to) answer people's dev questions.
-          I occasionally write about it here. You can also find me in{" "}
+          I occasionally write about it here. You can usually find me in{" "}
           <Link href="https://github.com/vercel/community/discussions">
             Vercel Community Discussions
           </Link>{" "}
-          on GitHub.
+          on GitHub. And sometimes on{" "}
+          <Link href="https://twitter.com/amyegan">Twitter</Link> and{" "}
+          <Link href="https://www.linkedin.com/in/amyaegan">LinkedIn</Link>.
         </p>
-      </section>
-
-      <section
-        className={`${utilStyles.headingMd} ${utilStyles.padding1px} ${utilStyles.homeSection}`}
-      >
-        <h2 className={utilStyles.headingLg}>Blog</h2>
-        <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
-              <Link href={`/blog/${id}`} legacyBehavior={false}>
-                {title}
-              </Link>
-              <br />
-              <small className={utilStyles.lightText}>
-                <Date dateString={date} />
-              </small>
-            </li>
-          ))}
-        </ul>
+        <div className={utilStyles.column}>
+          <h2 className={utilStyles.headingLg}>Blog</h2>
+          <ul className={utilStyles.list}>
+            {allPostsData.map(({ id, date, title }) => (
+              <li className={utilStyles.listItem} key={id}>
+                <Link href={`/blog/${id}`} legacyBehavior={false}>
+                  {title}
+                </Link>
+                <br />
+                <small className={utilStyles.lightText}>
+                  <Date dateString={date} />
+                </small>
+              </li>
+            ))}
+          </ul>
+        </div>
       </section>
     </Layout>
   );
