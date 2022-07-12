@@ -60,7 +60,7 @@
 .homeSection {
   background-color: var(--background);
   border-top: 1px solid var(--gray-med);
-  padding: 4em 3em 6em;
+  padding: 1em 1.5em 6em;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -75,9 +75,21 @@
   margin: 0 auto;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 800px) and (min-height: 680px) {
   .heroSection {
     padding: 3em;
     font-size: 3em;
+  }
+}
+
+@media (min-width: 800px) {
+  .homeSection {
+    padding: 3em 3em 6em;
+  }
+}
+
+@media (min-width: 1000px) {
+  .homeSection {
+    padding: 4em 3em 6em;
   }
 }

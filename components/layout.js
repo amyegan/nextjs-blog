@@ -7,7 +7,7 @@ import { NavLink } from "./navLink";
 const name = "Amy";
 export const siteTitle = "Amy Egan";
 
-export default function Layout({ children, home }) {
+export default function Layout({ children, home, post }) {
   return (
     <div className={styles.container}>
       <Head>
@@ -24,6 +24,7 @@ export default function Layout({ children, home }) {
         />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="theme-color" content="#28282d"></meta>
       </Head>
       <header
         className={styles.header}
@@ -51,9 +52,11 @@ export default function Layout({ children, home }) {
       ) : (
         <main className={styles.main}>
           {children}
-          <div className={styles.backToHome}>
-            <Link href="/blog">← Back to blog list</Link>
-          </div>
+          {post && (
+            <div className={styles.backToHome}>
+              <Link href="/blog">← Back to blog list</Link>
+            </div>
+          )}
         </main>
       )}
 
