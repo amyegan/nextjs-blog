@@ -24,25 +24,31 @@ export default function Home({ allPostsData }) {
         <p style={{ margin: "0", padding: "0" }}>
           Hi! I'm Amy <br />
           <span style={{ color: "var(--gray-light)", fontWeight: "200" }}>
-            and I use the internet to solve problems.
+            and I solve problems on the internet.
           </span>
         </p>
       </section>
 
-      <section
-        className={`${utilStyles.headingMd} ${utilStyles.padding1px} ${utilStyles.homeSection}`}
-      >
-        <p className={utilStyles.column} style={{ margin: "0 0 3em" }}>
-          I build projects with code and (try to) answer people's dev questions.
-          I occasionally write about it here. You can usually find me in{" "}
-          <Link href="https://github.com/vercel/community/discussions">
-            Vercel Community Discussions
-          </Link>{" "}
-          on GitHub. And sometimes on{" "}
-          <Link href="https://twitter.com/amyegan">Twitter</Link> and{" "}
-          <Link href="https://www.linkedin.com/in/amyaegan">LinkedIn</Link>.
-        </p>
+      <section className={`${utilStyles.homeSection}`}>
         <div className={utilStyles.column}>
+          <p>
+            I have been a professional web developer for over a decade. These
+            days I{" "}
+            <span style={{ color: "var(--gray-light)", fontWeight: "200" }}>
+              (try to)
+            </span>{" "}
+            answer people's dev questions about Vercel.
+          </p>
+          <p style={{ marginBottom: "3em" }}>
+            I occasionally write about related topics here. You can usually find
+            me in{" "}
+            <Link href="https://github.com/vercel/community/discussions">
+              Vercel Community Discussions
+            </Link>{" "}
+            on GitHub. And sometimes on{" "}
+            <Link href="https://twitter.com/amyegan">Twitter</Link> and{" "}
+            <Link href="https://www.linkedin.com/in/amyaegan">LinkedIn</Link>.
+          </p>
           <h2 className={utilStyles.headingLg}>Blog</h2>
           <ul className={utilStyles.list}>
             {allPostsData.map(({ id, date, title }) => (

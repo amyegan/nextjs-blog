@@ -7,8 +7,8 @@
 .main {
   max-width: 36rem;
   max-width: 60ch;
-  padding: 0 1rem;
-  margin: 3rem auto;
+  padding: 0 1.6em;
+  margin: 1em auto;
   flex: 1 0 auto;
 }
 
@@ -30,9 +30,10 @@
   max-width: 36rem;
   max-width: 60ch;
   margin: 0 auto;
+  flex-direction: column;
 }
 .footer a {
-  padding: 0 1em;
+  padding: 0.5em 1em;
   display: flex;
 }
 .footer a:hover {
@@ -43,8 +44,18 @@
   stroke: var(--green);
   margin-right: 0.5em;
 }
-a:hover .feather {
+.footer a:hover .feather {
   stroke: var(--text);
+}
+
+@media (min-width: 500px) {
+  .footerContainer {
+    flex-direction: row;
+  }
+
+  .main {
+    margin: 3em auto;
+  }
 }
 
 .backToHome {
