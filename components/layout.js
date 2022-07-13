@@ -24,7 +24,7 @@ export default function Layout({ children, home, post }) {
         />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="theme-color" content="#28282d"></meta>
+        <meta name="theme-color" content="#28282d" />
       </Head>
       <header
         className={styles.header}
@@ -96,7 +96,7 @@ export default function Layout({ children, home, post }) {
             </svg>{" "}
             Twitter
           </a>
-          <a href="https://www.linkedin.com/in/amyaegan" target="_blank">
+          <a href="https://www.linkedin.com/in/AmyAEgan" target="_blank">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="28"

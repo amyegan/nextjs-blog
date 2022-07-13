@@ -15,6 +15,7 @@
 .home {
   margin: 0;
   flex: 1 0 auto;
+  z-index: 1;
 }
 
 .footer {
@@ -56,6 +57,10 @@
   .main {
     margin: 3em auto;
   }
+
+  .header {
+    padding: 0 3em;
+  }
 }
 
 .backToHome {
@@ -67,11 +72,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 3em;
+  padding: 0 1.8em;
   border-bottom: 1px solid var(--gray-med);
   flex-shrink: 0;
   background-color: var(--background);
-  z-index: 1;
+  z-index: 10;
 }
 .header a {
   text-decoration: none;
