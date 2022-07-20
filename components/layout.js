@@ -24,8 +24,18 @@ export default function Layout({ children, home, post }) {
         />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="theme-color" content="#28282d" />
+        <meta
+          name="theme-color"
+          media="(prefers-color-scheme: dark)"
+          content="#28282d"
+        />
+        <meta
+          name="theme-color"
+          media="(prefers-color-scheme: light)"
+          content="#f1f0ec"
+        />
       </Head>
+      <meta name="robots" content="all" />
       <header
         className={styles.header}
         style={home && { position: "fixed", top: "0" }}

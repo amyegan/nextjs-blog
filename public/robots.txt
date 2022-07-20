@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://amyegan.com/sitemap.xml
