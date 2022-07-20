@@ -7,14 +7,22 @@ import { getSortedPostsData } from "../lib/posts";
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
+
+  let nextUrl = process.env.NEXT_PUBLIC_VERCEL_URL ?? "url not found";
+  let vercelUrl = process.env.VERCEL_URL ?? "url not found";
+  console.log("Next url", process.env.NEXT_PUBLIC_VERCEL_URL);
+  console.log("Vercel url", process.env.VERCEL_URL);
+
   return {
     props: {
       allPostsData,
+      nextUrl,
+      vercelUrl,
     },
   };
 }
 
-export default function Home({ allPostsData }) {
+export default function Home({ allPostsData, nextUrl, vercelUrl }) {
   return (
     <Layout home>
       <Head>
@@ -26,6 +34,9 @@ export default function Home({ allPostsData }) {
           <span style={{ color: "var(--gray-light)", fontWeight: "200" }}>
             and I solve problems on the internet.
           </span>
+        </p>
+        <p>
+          Next: {nextUrl} and Vercel: {vercelUrl}
         </p>
       </section>
 
