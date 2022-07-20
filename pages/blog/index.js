@@ -3,18 +3,20 @@ import Link from "next/link";
 import Date from "../../components/date";
 import Layout, { siteTitle } from "../../components/layout";
 import utilStyles from "../../styles/utils.module.css";
-import { getSortedPostsData } from "../../lib/posts";
+import { getSortedPostsData, getCategories } from "../../lib/posts";
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
+  const allCategories = getCategories();
   return {
     props: {
       allPostsData,
+      allCategories,
     },
   };
 }
 
-export default function Blog({ allPostsData }) {
+export default function Blog({ allPostsData, allCategories }) {
   return (
     <Layout blog>
       <Head>
