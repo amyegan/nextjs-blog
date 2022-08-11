@@ -1,12 +1,13 @@
-export async function getStaticProps() {
+export async function getServerSideProps(context) {
+  const { req } = context;
   return {
     props: {
-      vercelUrl: process.env.VERCEL_URL,
+      vercelUrl: req.headers.host,
     },
   };
 }
 
-export default function About({ vercelUrl }) {
+export default function About({ vercelUrl, nextUrl }) {
   console.log("vercelUrl", vercelUrl);
   return <h1>About</h1>;
 }
