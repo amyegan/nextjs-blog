@@ -2,12 +2,19 @@ export async function getServerSideProps(context) {
   const { req } = context;
   return {
     props: {
-      vercelUrl: req.headers.host,
+      domain: req.headers.host,
+      vercelUrl: process.env.VERCEL_URL,
     },
   };
 }
 
-export default function About({ vercelUrl, nextUrl }) {
+export default function TestComponen({ domain, vercelUrl }) {
+  console.log("domain", domain);
   console.log("vercelUrl", vercelUrl);
-  return <h1>About</h1>;
+  let databaseUrl = process.env.DATABASE_URL;
+  if (domain === "nightly.example.com") {
+    // Use nightly database url
+    databaseUrl = process.env.DATABASE_URL_NIGHTLY;
+  }
+  return <h1>Test Component</h1>;
 }
