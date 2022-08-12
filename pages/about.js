@@ -27,9 +27,11 @@ export function getStaticProps() {
 
 export default function TestComponen({ env, nextEnv, example }) {
   return (
-    <h1>
-      {example} in {env}
-    </h1>
-    <p>Next.js env is {nextEnv}</p>
+    <>
+      <h1>
+        {example} in {env}
+      </h1>
+      <p>Next.js env is {nextEnv}</p>
+    </>
   );
 }
