@@ -15,9 +15,16 @@
 //   };
 // }
 
-export default function TestComponen() {
-  let env = process.env.VERCEL_ENV;
-  let example = process.env.EXAMPLE;
+export function getStaticProps() {
+  return {
+    props: {
+      env: process.env.VERCEL_ENV,
+      example: process.env.EXAMPLE,
+    },
+  };
+}
+
+export default function TestComponen({ env, example }) {
   return (
     <h1>
       {example} in {env}
