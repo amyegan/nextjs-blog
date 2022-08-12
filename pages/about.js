@@ -19,15 +19,17 @@ export function getStaticProps() {
   return {
     props: {
       env: process.env.VERCEL_ENV,
+      nextEnv: process.env.NEXT_PUBLIC_VERCEL_ENV,
       example: process.env.EXAMPLE,
     },
   };
 }
 
-export default function TestComponen({ env, example }) {
+export default function TestComponen({ env, nextEnv, example }) {
   return (
     <h1>
       {example} in {env}
     </h1>
+    <p>Next.js env is {nextEnv}</p>
   );
 }
