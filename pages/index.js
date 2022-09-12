@@ -6,6 +6,10 @@ import utilStyles from "../styles/utils.module.css";
 import { getSortedPostsData } from "../lib/posts";
 
 export async function getStaticProps() {
+  let nodeEnv = process.env.NODE_ENV;
+  let vercelEnv = process.env.VERCEL_ENV;
+  let nextEnv = process.env.NEXT_PUBLIC_VERCEL_ENV;
+  console.log("env", { nodeEnv, vercelEnv, nextEnv });
   const allPostsData = getSortedPostsData();
   return {
     props: {
