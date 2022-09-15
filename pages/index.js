@@ -11,15 +11,18 @@ export async function getStaticProps() {
   return {
     props: {
       allPostsData,
+      example: process.env.EXAMPLE,
     },
   };
 }
 
-export default function Home({ allPostsData }) {
+export default function Home({ allPostsData, example }) {
   return (
     <Layout home>
       <Head>
-        <title>{siteTitle}</title>
+        <title>
+          {siteTitle} - {example}
+        </title>
       </Head>
       <section className={utilStyles.heroSection}>
         <p style={{ margin: "0", padding: "0" }}>
