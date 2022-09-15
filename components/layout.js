@@ -34,6 +34,7 @@ export default function Layout({ children, home, post }) {
           media="(prefers-color-scheme: light)"
           content="#f1f0ec"
         />
+        <script async data-api="/_hive" src="/bee.js"></script>
       </Head>
       <meta name="robots" content="all" />
       <header
