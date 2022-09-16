@@ -1,6 +1,6 @@
-import { NextRequest, NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 
-export default (req: NextRequest) => {
+export default (req) => {
   return fetch("https://pokeapi.co/api/v2/pokemon/eevee")
     .then((response) => response.json())
     .then((data) => {

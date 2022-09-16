@@ -1,6 +1,6 @@
-import { NextRequest, NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 
-export default (req: NextRequest) => {
+export default (req) => {
   return NextResponse.json({
     name: `Hello, from ${req.url} I'm now an Edge Function!`,
   });
