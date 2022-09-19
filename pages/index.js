@@ -28,7 +28,7 @@ export default function Home({ allPostsData, example }) {
         <p style={{ margin: "0", padding: "0" }}>
           Hi! I'm Amy <br />
           <span style={{ color: "var(--gray-light)", fontWeight: "200" }}>
-            and I solve problems on the internet. {example}
+            and I solve problems on the internet.
           </span>
         </p>
       </section>
