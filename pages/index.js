@@ -7,21 +7,23 @@ import { getSortedPostsData } from "../lib/posts";
 
 export async function getStaticProps() {
   console.log("EXAMPLE", process.env.EXAMPLE);
+  console.log("EXPAND", process.env.EXPAND);
   const allPostsData = getSortedPostsData();
   return {
     props: {
       allPostsData,
       example: process.env.EXAMPLE,
+      expand: process.env.EXPAND,
     },
   };
 }
 
-export default function Home({ allPostsData, example }) {
+export default function Home({ allPostsData, example, expand }) {
   return (
     <Layout home>
       <Head>
         <title>
-          {siteTitle} - {example}
+          {siteTitle} - {expand}
         </title>
       </Head>
       <section className={utilStyles.heroSection}>
