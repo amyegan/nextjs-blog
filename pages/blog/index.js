@@ -23,7 +23,7 @@ export default function Blog({ allPostsData, allCategories }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h1 className={utilStyles.headingLg}>Blog</h1>
+        <h1 className={utilStyles.headingLg}>Does it work?</h1>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
