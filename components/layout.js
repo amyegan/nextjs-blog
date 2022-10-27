@@ -73,7 +73,7 @@ export default function Layout({ children, home, post }) {
 
       <footer className={styles.footer}>
         <div className={styles.footerContainer}>
-          <a href="https://github.com/amyegan" target="_blank">
+          <a href="https://github.com/amyegan" target="_blank" rel="noreferrer">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="28"
@@ -90,7 +90,7 @@ export default function Layout({ children, home, post }) {
             </svg>{" "}
             GitHub
           </a>
-          <a href="https://twitter.com/AmyAEgan" target="_blank">
+          <a href="https://twitter.com/AmyAEgan" target="_blank" rel="noreferrer">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="28"
@@ -107,7 +107,7 @@ export default function Layout({ children, home, post }) {
             </svg>{" "}
             Twitter
           </a>
-          <a href="https://www.linkedin.com/in/AmyAEgan" target="_blank">
+          <a href="https://www.linkedin.com/in/AmyAEgan" target="_blank" rel="noreferrer">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="28"
