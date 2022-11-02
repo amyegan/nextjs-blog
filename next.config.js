@@ -7,7 +7,7 @@ const nextConfig = {
     defaultLocale: "en-US",
   },
   experimental: {
-    newNextLinkBehavior: true,
+    appDir: true,
   },
   trailingSlash: false,
   async rewrites() {
