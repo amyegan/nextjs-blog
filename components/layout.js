@@ -12,10 +12,7 @@ export default function Layout({ children, home, post }) {
     <div className={styles.container}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <meta
-          name="description"
-          content="Who is Amy?"
-        />
+        <meta name="description" content="Who is Amy?" />
         <meta
           property="og:image"
           content={`https://og-image.vercel.app/${encodeURI(
@@ -73,7 +70,7 @@ export default function Layout({ children, home, post }) {
 
       <footer className={styles.footer}>
         <div className={styles.footerContainer}>
-          <a href="https://github.com/amyegan" target="_blank" rel="noreferrer">
+          <a href="https://github.com/amyegan">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="28"
@@ -90,7 +87,7 @@ export default function Layout({ children, home, post }) {
             </svg>{" "}
             GitHub
           </a>
-          <a href="https://twitter.com/AmyAEgan" target="_blank" rel="noreferrer">
+          <a href="https://twitter.com/AmyAEgan">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="28"
@@ -107,7 +104,7 @@ export default function Layout({ children, home, post }) {
             </svg>{" "}
             Twitter
           </a>
-          <a href="https://www.linkedin.com/in/AmyAEgan" target="_blank" rel="noreferrer">
+          <a href="https://www.linkedin.com/in/AmyAEgan">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="28"
@@ -125,6 +122,24 @@ export default function Layout({ children, home, post }) {
               <circle cx="4" cy="4" r="2" />
             </svg>{" "}
             LinkedIn
+          </a>
+          <a rel="me" href="https://indieweb.social/@amyegan">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="28"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              className={styles.feather}
+            >
+              <circle cx="12" cy="12" r="4"></circle>
+              <path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"></path>
+            </svg>{" "}
+            Mastodon
           </a>
         </div>
       </footer>
