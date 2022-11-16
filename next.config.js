@@ -6,9 +6,6 @@ const nextConfig = {
     locales: ["en-US"],
     defaultLocale: "en-US",
   },
-  experimental: {
-    appDir: true,
-  },
   trailingSlash: false,
   async rewrites() {
     return [
@@ -19,6 +16,10 @@ const nextConfig = {
       {
         source: "/_hive/:slug",
         destination: "https://hive.splitbee.io/:slug",
+      },
+      {
+        source: "/sitemap.xml",
+        destination: "/api/sitemap",
       },
     ];
   },

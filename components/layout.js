@@ -70,7 +70,7 @@ export default function Layout({ children, home, post }) {
 
       <footer className={styles.footer}>
         <div className={styles.footerContainer}>
-          <a href="https://github.com/amyegan">
+          <a rel="me" href="https://github.com/amyegan">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="28"
@@ -87,7 +87,7 @@ export default function Layout({ children, home, post }) {
             </svg>{" "}
             GitHub
           </a>
-          <a href="https://twitter.com/AmyAEgan">
+          <a rel="me" href="https://twitter.com/AmyAEgan">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="28"
@@ -104,7 +104,7 @@ export default function Layout({ children, home, post }) {
             </svg>{" "}
             Twitter
           </a>
-          <a href="https://www.linkedin.com/in/AmyAEgan">
+          <a rel="me" href="https://www.linkedin.com/in/AmyAEgan">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="28"
@@ -131,9 +131,9 @@ export default function Layout({ children, home, post }) {
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="1"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="1"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               className={styles.feather}
             >
               <circle cx="12" cy="12" r="4"></circle>
