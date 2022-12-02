@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import Head from "next/head";
 import Link from "next/link";
-import Date from "../components/date";
+import PrettyDate from "../components/date";
 import Layout, { siteTitle } from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
 import { getSortedPostsData } from "../lib/posts";
@@ -59,7 +59,7 @@ export default function Home({ allPostsData }) {
                 </Link>
                 <br />
                 <small className={utilStyles.lightText}>
-                  <Date dateString={date} />
+                  <PrettyDate dateString={date} />
                 </small>
               </li>
             ))}
