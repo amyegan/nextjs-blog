@@ -44,10 +44,10 @@ export default function Home({ allPostsData }) {
             I occasionally write about related topics here. You can usually find
             me in{" "}
             <Link href="https://github.com/vercel/community/discussions">
-              Vercel Community Discussions
+              Vercel Discussions
             </Link>{" "}
             on GitHub. And sometimes on{" "}
-            <Link href="https://twitter.com/amyegan">Twitter</Link> and{" "}
+            <Link href="https://twitter.com/amyegan">Twitter</Link>, <Link href="https://indieweb.social/@amyegan">Mastodon</Link>, and{" "}
             <Link href="https://www.linkedin.com/in/amyaegan">LinkedIn</Link>.
           </p>
           <h2 className={utilStyles.headingLg}>Blog</h2>
