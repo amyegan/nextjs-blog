@@ -67,6 +67,7 @@
   min-height: calc(100vh - 6em);
   font-size: 1.2rem;
   line-height: 1.5;
+  z-index: 2;
 }
 
 .column {
