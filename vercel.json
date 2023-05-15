@@ -1,0 +1,23 @@
+{
+  "headers": [
+    {
+      "source": "/(.+).(json)",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "audio/webm"
+        }
+      ]
+    },
+    {
+      "source": "/(.+).txt",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "audio/aac"
+        }
+      ]
+    }
+  ],
+  "regions": ["sfo1", "pdx1", "iad1"]
+}
