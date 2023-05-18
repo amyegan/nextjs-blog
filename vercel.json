@@ -19,5 +19,26 @@
       ]
     }
   ],
-  "regions": ["sfo1", "pdx1", "iad1"]
+  "rewrites": [
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "test.amyegan.com/"
+        }
+      ],
+      "destination": "/blog"
+    },
+    {
+      "source": "",
+      "has": [
+        {
+          "type": "host",
+          "value": "test.amyegan.com/"
+        }
+      ],
+      "destination": "/blog/first-post"
+    }
+  ]
 }
