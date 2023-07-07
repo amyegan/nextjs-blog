@@ -20,7 +20,7 @@ export default function Blog({ allPostsData, allCategories }) {
   return (
     <Layout blog>
       <Head>
-        <title>{siteTitle} Blog</title>
+        <title>{siteTitle} Blog Posts</title>
       </Head>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h1 className={utilStyles.headingLg}>Posts</h1>
