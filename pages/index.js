@@ -25,7 +25,7 @@ export default function Home({ allPostsData }) {
       <p style={{ margin: "0", padding: "0" }}>
           Hi! I'm a preview deployment <br />
           <span style={{ color: "var(--gray-light)", fontWeight: "200" }}>
-            and I help test problems on the internet.
+            and I help you test problems on the internet.
           </span>
         </p>
       </section>
