@@ -34,20 +34,19 @@ export default function Home({ allPostsData }) {
         <div className={utilStyles.column}>
           <p>
             I have been a professional web developer for over a decade. These
-            days I{" "}
-            <span style={{ color: "var(--gray-light)", fontWeight: "200" }}>
-              (try to)
-            </span>{" "}
-            answer people's dev questions about Vercel.
+            days I manage the{" "}
+            <a href="https://vercel.community">Vercel Community</a> and answer
+            people's dev questions.
           </p>
           <p style={{ marginBottom: "3em" }}>
-            I occasionally write about related topics here. You can usually find
-            me in{" "}
-            <Link href="https://github.com/vercel/community/discussions">
-              Vercel Discussions
-            </Link>{" "}
-            on GitHub. And sometimes on{" "}
-            <Link href="https://twitter.com/amyegan">Twitter</Link>, <Link href="https://indieweb.social/@amyegan">Mastodon</Link>, and{" "}
+            I{" "}
+            <span style={{ color: "var(--gray-light)", fontWeight: "200" }}>
+              (rarely){" "}
+            </span>
+            write about related topics here. And sometimes on{" "}
+            <Link href="https://bsky.app/profile/amyegan.dev">Bluesky</Link>,{" "}
+            <Link href="https://x.com/AmyAEgan">Twitter</Link>,{" "}
+            <Link href="https://indieweb.social/@amyegan">Mastodon</Link>, and{" "}
             <Link href="https://www.linkedin.com/in/amyaegan">LinkedIn</Link>.
           </p>
           <h2 className={utilStyles.headingLg}>Blog</h2>
