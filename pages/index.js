@@ -49,20 +49,6 @@ export default function Home({ allPostsData }) {
             <Link href="https://indieweb.social/@amyegan">Mastodon</Link>, and{" "}
             <Link href="https://www.linkedin.com/in/amyaegan">LinkedIn</Link>.
           </p>
-          <h2 className={utilStyles.headingLg}>Blog</h2>
-          <ul className={utilStyles.list}>
-            {allPostsData.map(({ id, date, title }) => (
-              <li className={utilStyles.listItem} key={id}>
-                <Link href={`/blog/${id}`} legacyBehavior={false}>
-                  {title}
-                </Link>
-                <br />
-                <small className={utilStyles.lightText}>
-                  <PrettyDate dateString={date} />
-                </small>
-              </li>
-            ))}
-          </ul>
         </div>
       </section>
     </Layout>
