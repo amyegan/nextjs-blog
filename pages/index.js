@@ -35,18 +35,16 @@ export default function Home({ allPostsData }) {
           <p>
             I have been a professional web developer for over a decade. These
             days I manage the{" "}
-            <a href="https://vercel.community">Vercel Community</a> and answer
-            people's dev questions.
+            <a href="https://vercel.community">Vercel Community</a>, answering
+            people's dev questions and encouraging collaboration and
+            knowledge-sharing among fellow developers. When not focused on
+            keeping the web fast and fun, I'm usually watching birds and
+            touching grass.
           </p>
           <p style={{ marginBottom: "3em" }}>
-            I{" "}
-            <span style={{ color: "var(--gray-light)", fontWeight: "200" }}>
-              (rarely){" "}
-            </span>
-            write about related topics here. And sometimes on{" "}
+            You can also find me on{" "}
             <Link href="https://bsky.app/profile/amyegan.dev">Bluesky</Link>,{" "}
-            <Link href="https://x.com/AmyAEgan">X/Twitter</Link>,{" "}
-            <Link href="https://indieweb.social/@amyegan">Mastodon</Link>, and{" "}
+            <Link href="https://x.com/AmyAEgan">X/Twitter</Link>, and{" "}
             <Link href="https://www.linkedin.com/in/amyaegan">LinkedIn</Link>.
           </p>
         </div>
