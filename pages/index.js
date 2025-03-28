@@ -45,7 +45,7 @@ export default function Home({ allPostsData }) {
             </span>
             write about related topics here. And sometimes on{" "}
             <Link href="https://bsky.app/profile/amyegan.dev">Bluesky</Link>,{" "}
-            <Link href="https://x.com/AmyAEgan">Twitter</Link>,{" "}
+            <Link href="https://x.com/AmyAEgan">X/Twitter</Link>,{" "}
             <Link href="https://indieweb.social/@amyegan">Mastodon</Link>, and{" "}
             <Link href="https://www.linkedin.com/in/amyaegan">LinkedIn</Link>.
           </p>
